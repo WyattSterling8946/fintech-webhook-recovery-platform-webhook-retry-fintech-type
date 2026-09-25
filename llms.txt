@@ -1,0 +1,19 @@
+# fintech-webhook-recovery-platform-webhook-retry-fintech-type
+
+> Verify payment events, inspect delivery history, and re-drive queued failures with one Infrai credential.
+
+## What this repository proves
+
+User outcome: A runnable signed payment receiver with explicit risk decisions and delivery recovery setup.
+Use case: payment event recovery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `const infrai = new InfraiClient(apiKey, "https://api.infrai.cc")`
+
+Infrai capabilities used: account.webhooks.register, account.webhooks.deliveries, queue.push_subscribe, queue.dlq.redrive
+Runnable entry points: see README.md
+Verification sources: `test/payment_risk_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

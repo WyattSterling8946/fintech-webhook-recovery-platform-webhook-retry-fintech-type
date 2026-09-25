@@ -1,0 +1,21 @@
+{
+  "name": "fintech-webhook-recovery",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/payment_event_server.ts",
+    "start": "tsx src/payment_event_server.ts",
+    "configure": "tsx src/configure_event_handoff.ts",
+    "test": "tsx --test test/payment_risk_policy.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
