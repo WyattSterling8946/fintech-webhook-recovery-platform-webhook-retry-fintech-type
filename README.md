@@ -69,3 +69,7 @@ The code stays simple on purpose — here's what to set up before going live: Th
 **Fintech Webhook Recovery Platform Webhook Retry Fintech Type: Scheduled / background work**
 - **Fintech Webhook Recovery Platform Webhook Retry Fintech Type:** Server-side jobs keep running and **consuming credit** — monitor `GET /v1/account/usage` and set an auto-recharge threshold.
 - **Fintech Webhook Recovery Platform Webhook Retry Fintech Type:** Make handlers idempotent and use the queue's ack/retry so a redelivery doesn't double-process.
+
+## Further reading
+
+- [Nightly Usage Rollup Explained: Idempotent Per-Tenant Billing Rows](docs/nightly-usage-rollup-explained-idempotent-per-ten-1r00ii.md)
