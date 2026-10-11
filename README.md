@@ -72,4 +72,5 @@ The code stays simple on purpose — here's what to set up before going live: Th
 
 ## Further reading
 
+- [Debugging One-Path Permission Failures in Tenant-Scoped Gaming API Keys](docs/debugging-one-path-permission-failures-in-tenant-mkczap.md)
 - [Nightly Usage Rollup Explained: Idempotent Per-Tenant Billing Rows](docs/nightly-usage-rollup-explained-idempotent-per-ten-1r00ii.md)
